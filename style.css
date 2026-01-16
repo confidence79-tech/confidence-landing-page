@@ -132,7 +132,7 @@ body {
   .hero h2 {
     font-size: 49px;
     text-align: left;
-    Padding-left: 5px;
+    margin-left: 10px;
   }
   
   .hero p {
