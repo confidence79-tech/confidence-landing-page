@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #1645e1b8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 15px;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  font-size: 30px;
+  margin-right: 70px;
+}
+
+.hamburger {
+  font-size: 38px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s, border-buttom 0.3s;
+}
+
+.nav-links a:active {
+  color: #00e5ff;
+  border-bottom: 2px solid #00e5ff;
+}
+
+.hero {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  text-shadow: 5px 3px 3px blue, 6px -3px 3px #0a1beb;
+  font-size: 120px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  text-shadow: 2px 2px 3px #000000;
+  font-size: 29px;
+  margin-bottom: 70px;
+  font-weight: bold;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.btn {
+  margin-top: 50px;
+  border: 5px blue solid;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 39px;
+  color: blue;
+  font-weight: bold;
+  box-shadow: coral;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: white;
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .nav-links a {
+  color: blue;
+  text-decoration: none;
+  transition: color 0.3s, border-buttom 0.3s;
+  }
+  
+  .nav-links.active {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .hero h2 {
+    font-size: 49px;
+    text-align: left;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 39px;
+  }
+  
+  .btn {
+  border: 3px blue solid;
+  background-color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 26px;
+  color: blue;
+  font-weight: bold;
+  box-shadow: coral;
+}
+}
